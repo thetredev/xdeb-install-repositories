@@ -25,9 +25,10 @@ providers:
     dists:
       - <distribution1>
       - <distribution2>
+      ...
 ```
 
-For example, the `debian.org` provider is defined as follows:
+For example, the `debian.org` provider for `x86_64` is defined as follows:
 ```yaml
 providers:
   - name: debian.org
@@ -50,6 +51,36 @@ providers:
       - testing-backports
 ```
 
+### Custom repository lists
+
+The repository `lists.yaml` file needs to have `custom: true` set for custom repositories:
+```yaml
+providers:
+  - name: <provider name>
+    custom: true
+    url: <custom repository URL>
+    components:
+      - <component1>.yaml
+      - <component2>.yaml
+      ...
+    dists:
+      - <distribution1>
+      - <distribution2>
+      ...
+```
+
+For example, the `microsoft.com` provider for `x86_64` is defined as follows:
+```yaml
+providers:
+  - name: microsoft.com
+    custom: true
+    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/microsoft.com
+    components:
+      - vscode.yaml
+    dists:
+      - current
+```
+
 ### Custom repositories
 
 Custom repositories are described in the `repositories/<arch>/<provider>/<component>.yaml` file, where `<arch>` is the host machine architecture reported by Void Linux (output of command `uname -m`).
@@ -62,7 +93,7 @@ xdeb:
   ...
 ```
 
-For example, the `microsoft.com` provider has the following definition for component `vscode.yaml`:
+For example, the `microsoft.com` provider for `x86_64` has the following definition for component `vscode.yaml`:
 ```yaml
 xdeb:
   - name: vscode
