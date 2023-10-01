@@ -31,3 +31,19 @@ providers:
       - vera
       - vanessa
       - faye
+
+  - name: microsoft.com
+    custom: true
+    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/microsoft.com
+    components:
+      - vscode.yaml
+    dists:
+      - current
+
+  - name: google.com
+    custom: true
+    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/google.com
+    components:
+      - google-chrome.yaml
+    dists:
+      - current
