@@ -1,0 +1,35 @@
+providers:
+  - name: debian.org
+    url: http://ftp.debian.org/debian
+    architecture: arm64
+    components:
+      - contrib
+      - main
+      - non-free
+      - non-free-firmware
+    dists:
+      - bookworm
+      - bookworm-backports
+      - bullseye
+      - bullseye-backports
+      - buster
+      - buster-backports
+      - sid
+      - testing
+      - testing-backports
+
+  - name: microsoft.com
+    custom: true
+    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/arm64/microsoft.com
+    components:
+      - vscode.yaml
+    dists:
+      - current
+
+  - name: google.com
+    custom: true
+    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/arm64/google.com
+    components:
+      - google-chrome.yaml
+    dists:
+      - current
