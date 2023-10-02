@@ -31,3 +31,16 @@ providers:
       - vera
       - vanessa
       - faye
+
+  - name: ubuntu.com
+    url: http://archive.ubuntu.com/ubuntu
+    architecture: i386
+    components:
+      - main
+      - multiverse
+      - restricted
+      - universe
+    dists:
+      - bionic
+      - focal
+      - jammy

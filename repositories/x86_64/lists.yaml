@@ -32,6 +32,19 @@ providers:
       - vanessa
       - faye
 
+  - name: ubuntu.com
+    url: http://archive.ubuntu.com/ubuntu
+    architecture: amd64
+    components:
+      - main
+      - multiverse
+      - restricted
+      - universe
+    dists:
+      - bionic
+      - focal
+      - jammy
+
   - name: microsoft.com
     custom: true
     url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/microsoft.com
