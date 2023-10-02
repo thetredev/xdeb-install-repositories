@@ -4,7 +4,21 @@ This project aims to provide package repositories for [xdeb-install](https://git
 
 ## Supported repositories
 
-Currently, only `debian.org` and `linuxmint.com` are supported besides custom ones. I cannot get `ubuntu.com` to work at the moment.
+| Prodiver | Components | Repository/Component URL | Provider Architecture | Void Linux Architecture | Is custom? |
+| --- | --- | --- | --- | --- | --- |
+| `debian.org` | all | http://ftp.debian.org/debian | `amd64` | `x86_64` | No |
+| | all | | `i386` | `i686` | No |
+| | all | | `arm64` | `aarch64` | No |
+| `linuxmint.com` | all | http://packages.linuxmint.com | `amd64` | `x86_64` | No |
+| | all | | `i386` | `i686` | No |
+| `ubuntu.com` | all | http://archive.ubuntu.com/ubuntu | `amd64` | `x86_64` | No |
+| | all | | `i386` | `i686` | No |
+| `microsoft.com` | Visual Studio Code | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 | `amd64` | `x86_64` | Yes |
+| | | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64 | `arm64` | `aarch64` | Yes |
+| `google.com` | Google Chrome | https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb | `amd64` | `x86_64` | Yes |
+| | | https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb | `arm64` | `aarch64` | Yes |
+| `google.com` | Google Chrome (unstable) | https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb | `amd64` | `x86_64` | Yes |
+| | | https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb | `arm64` | `aarch64` | Yes |
 
 ## Structure
 
