@@ -3,8 +3,8 @@ providers:
     url: http://ftp.debian.org/debian
     architecture: amd64
     components:
-      - contrib
       - main
+      - contrib
       - non-free
       - non-free-firmware
     dists:
@@ -22,9 +22,9 @@ providers:
     url: http://packages.linuxmint.com
     architecture: amd64
     components:
+      - main
       - backport
       - import
-      - main
       - upstream
     dists:
       - victoria

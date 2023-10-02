@@ -49,8 +49,8 @@ providers:
     url: http://ftp.debian.org/debian
     architecture: amd64
     components:
-      - contrib
       - main
+      - contrib
       - non-free
       - non-free-firmware
     dists:
