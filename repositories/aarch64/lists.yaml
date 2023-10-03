@@ -20,6 +20,7 @@ providers:
 
   - name: microsoft.com
     custom: true
+    architecture: arm64
     url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/arm64/microsoft.com
     components:
       - vscode.yaml
@@ -28,6 +29,7 @@ providers:
 
   - name: google.com
     custom: true
+    architecture: arm64
     url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/arm64/google.com
     components:
       - google-chrome.yaml

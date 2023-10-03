@@ -79,6 +79,7 @@ The repository `lists.yaml` file needs to have `custom: true` set for custom rep
 providers:
   - name: <provider name>
     custom: true
+    architecture: <architecture>
     url: <custom repository URL>
     components:
       - <component1>.yaml
@@ -95,6 +96,7 @@ For example, the `microsoft.com` provider for `x86_64` is defined as follows:
 providers:
   - name: microsoft.com
     custom: true
+    architecture: amd64
     url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/microsoft.com
     components:
       - vscode.yaml
