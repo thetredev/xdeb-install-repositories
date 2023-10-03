@@ -6,7 +6,7 @@ This project aims to provide package repositories for [xdeb-install](https://git
 
 ### APT providers
 
-| Prodiver | Components | Repository URL | Provider Architecture | Void Linux Architecture |
+| Provider | Components | Repository URL | Provider Architecture | Void Linux Architecture |
 | --- | --- | --- | --- | --- |
 | `debian.org` | all | http://ftp.debian.org/debian | `amd64` | `x86_64` |
 | | all | | `i386` | `i686` |
@@ -18,7 +18,7 @@ This project aims to provide package repositories for [xdeb-install](https://git
 
 ### Custom providers
 
-| Prodiver | Components | Component URL | Provider Architecture | Void Linux Architecture |
+| Provider | Components | Component URL | Provider Architecture | Void Linux Architecture |
 | --- | --- | --- | --- | --- |
 | `microsoft.com` | Visual Studio Code | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 | `amd64` | `x86_64` |
 | | | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64 | `arm64` | `aarch64` |
