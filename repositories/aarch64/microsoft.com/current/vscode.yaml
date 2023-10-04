@@ -1,3 +1,8 @@
 xdeb:
   - name: vscode
     url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64
+    post-install:
+      - name: Link 'code' executable
+        commands:
+          - root: true
+            command: ln -sf /usr/share/code/bin/code /usr/local/bin/code

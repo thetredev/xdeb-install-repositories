@@ -116,9 +116,37 @@ xdeb:
   ...
 ```
 
+Optionally, `post-install` hooks can be defined which allow for executing shell commands after package installation:
+```yaml
+xdeb:
+  - name: <package name>
+    url: <DEB file download location>
+    post-install:
+      - name: Hook1 - some descriptive name
+        commands:
+          - root: true # whether to run as root user (prepends 'sudo' if xdeb-install is executed as non-root user)
+            command: command1 arg1 arg2 arg3
+          - root: false
+            command: command2 arg1 arg2 arg3
+      - name: Hook2 - another descriptive name
+        commands:
+          - root: true
+            command: command1 arg1 arg2 arg3
+          - root: true
+            command: command2 arg1 arg2 arg3
+          ...
+      ...
+  ...
+```
+
 For example, the `microsoft.com` provider for `x86_64` has the following definition for component `vscode.yaml`:
 ```yaml
 xdeb:
   - name: vscode
     url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+    post-install:
+      - name: Link 'code' executable
+        commands:
+          - root: true
+            command: ln -sf /usr/share/code/bin/code /usr/local/bin/code
 ```
