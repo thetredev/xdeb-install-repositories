@@ -97,7 +97,7 @@ providers:
   - name: microsoft.com
     custom: true
     architecture: amd64
-    url: https://raw.githubusercontent.com/thetredev/xdeb-install-repositories/main/repositories/x86_64/microsoft.com
+    url: repositories/x86_64/microsoft.com
     components:
       - vscode.yaml
     dists:
