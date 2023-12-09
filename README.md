@@ -11,10 +11,12 @@ This project aims to provide package repositories for [xdeb-install](https://git
 | `debian.org` | all | http://ftp.debian.org/debian | `amd64` | `x86_64` |
 | | all | | `i386` | `i686` |
 | | all | | `arm64` | `aarch64` |
-| `linuxmint.com` | all | http://packages.linuxmint.com | `amd64` | `x86_64` |
+| `linuxmint.com` | all | https://mirrors.edge.kernel.org/linuxmint-packages | `amd64` | `x86_64` |
 | | all | | `i386` | `i686` |
 | `ubuntu.com` | all | http://archive.ubuntu.com/ubuntu | `amd64` | `x86_64` |
 | | all | | `i386` | `i686` |
+
+Note: The official mirror for `linuxmint.com` (http://packages.linuxmint.com) was replaced with https://mirrors.edge.kernel.org/linuxmint-packages on 2023-12-09 due to the official one being unreachable sporadically. This hinders development, testing, and last but not least the usability of `xdeb-install` as a whole. The mirror will be changed back to the official one once it's fixed, if at all.
 
 ### Custom providers
 
