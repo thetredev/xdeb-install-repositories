@@ -1,0 +1,175 @@
+xdeb:
+  - name: dotnet-host-8.0
+    dependencies:
+      - provider: microsoft.com
+        packages:
+          - dotnet-host
+          - dotnet-hostfxr-8.0
+
+  - name: dotnet-sdk-8.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-host-8.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-sdk-8.0
+          - dotnet-targeting-pack-8.0
+
+  - name: aspnetcore-sdk-8.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-8.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-targeting-pack-8.0
+
+  - name: dotnet-runtime-8.0
+    dependencies:
+      - provider: xbps
+        packages:
+          - icu-libs
+      - provider: virtual
+        packages:
+          - dotnet-host-8.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-runtime-8.0
+          - dotnet-runtime-deps-8.0
+
+  - name: aspnetcore-runtime-8.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-runtime-8.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-runtime-8.0
+
+  - name: dotnet-8.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-8.0
+          - dotnet-runtime-8.0
+          - aspnetcore-sdk-8.0
+          - aspnetcore-runtime-8.0
+
+  - name: dotnet-host-7.0
+    dependencies:
+      - provider: microsoft.com
+        packages:
+          - dotnet-host
+          - dotnet-hostfxr-7.0
+
+  - name: dotnet-sdk-7.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-host-7.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-sdk-7.0
+          - dotnet-targeting-pack-7.0
+          - dotnet-host
+          - dotnet-hostfxr-7.0
+
+  - name: aspnetcore-sdk-7.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-7.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-targeting-pack-7.0
+
+  - name: dotnet-runtime-7.0
+    dependencies:
+      - provider: xbps
+        packages:
+          - icu-libs
+      - provider: virtual
+        packages:
+          - dotnet-host-7.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-runtime-7.0
+          - dotnet-runtime-deps-7.0
+
+  - name: aspnetcore-runtime-7.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-runtime-7.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-runtime-7.0
+
+  - name: dotnet-7.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-7.0
+          - dotnet-runtime-7.0
+          - aspnetcore-sdk-7.0
+          - aspnetcore-runtime-7.0
+
+  - name: dotnet-host-6.0
+    dependencies:
+      - provider: microsoft.com
+        packages:
+          - dotnet-host
+          - dotnet-hostfxr-6.0
+
+  - name: dotnet-sdk-6.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-host-6.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-sdk-6.0
+          - dotnet-targeting-pack-6.0
+          - dotnet-host
+          - dotnet-hostfxr-6.0
+
+  - name: aspnetcore-sdk-6.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-6.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-targeting-pack-6.0
+
+  - name: dotnet-runtime-6.0
+    dependencies:
+      - provider: xbps
+        packages:
+          - icu-libs
+      - provider: virtual
+        packages:
+          - dotnet-host-6.0
+      - provider: microsoft.com
+        packages:
+          - dotnet-runtime-6.0
+          - dotnet-runtime-deps-6.0
+
+  - name: aspnetcore-runtime-6.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-runtime-6.0
+      - provider: microsoft.com
+        packages:
+          - aspnetcore-runtime-6.0
+
+  - name: dotnet-6.0
+    dependencies:
+      - provider: virtual
+        packages:
+          - dotnet-sdk-6.0
+          - dotnet-runtime-6.0
+          - aspnetcore-sdk-6.0
+          - aspnetcore-runtime-6.0

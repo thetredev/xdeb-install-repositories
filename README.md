@@ -31,6 +31,15 @@ Note: The official mirror for `linuxmint.com` (http://packages.linuxmint.com) wa
 | `google.com` | Google Chrome (unstable) | https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb | `amd64` | `x86_64` |
 | | | https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb | `arm64` | `aarch64` |
 
+### Virtual provider
+
+The virtual provider is a custom provider which provides virtual packages. These packages are just a list of dependencies of other packages from various sources. The `xbps` provider is just a way of saying "the official Void Linux repositories".
+
+| Package Family | Components | Component URL | Provider Architecture | Void Linux Architecture |
+| --- | --- | --- | --- | --- |
+| `dotnet` | .NET SDK + Runtime, ASP.NET Core SDK + Runtime | Providers `microsoft.com` and `xbps` | `amd64` | `x86_64` |
+| | | | `arm64` | `aarch64` |
+
 ## Structure
 
 ### APT repositories

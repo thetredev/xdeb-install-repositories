@@ -47,3 +47,12 @@ providers:
       - google-chrome.yaml
     dists:
       - current
+
+  - name: virtual
+    custom: true
+    architecture: arm64
+    url: repositories/aarch64/virtual
+    components:
+      - dotnet.yaml
+    dists:
+      - current
