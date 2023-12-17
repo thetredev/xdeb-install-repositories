@@ -22,7 +22,7 @@ Note: The official mirror for `linuxmint.com` (http://packages.linuxmint.com) wa
 
 | Provider | Components | Component URL | Provider Architecture | Void Linux Architecture |
 | --- | --- | --- | --- | --- |
-| `microsoft.com` | Visual Studio Code | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 | `amd64` | `x86_64` |
+| `code.visualstudio.com` | Visual Studio Code | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 | `amd64` | `x86_64` |
 | | | https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64 | `arm64` | `aarch64` |
 | `google.com` | Google Chrome | https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb | `amd64` | `x86_64` |
 | | | https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb | `arm64` | `aarch64` |
@@ -141,7 +141,7 @@ xdeb:
   ...
 ```
 
-For example, the `microsoft.com` provider for `x86_64` has the following definition for component `vscode.yaml`:
+For example, the `code.visualstudio.com` provider for `x86_64` has the following definition for component `vscode.yaml`:
 ```yaml
 xdeb:
   - name: vscode

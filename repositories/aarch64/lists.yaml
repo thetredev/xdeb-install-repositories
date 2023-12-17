@@ -18,10 +18,10 @@ providers:
       - testing
       - testing-backports
 
-  - name: microsoft.com
+  - name: visualstudio.com
     custom: true
     architecture: arm64
-    url: repositories/arm64/microsoft.com
+    url: repositories/arm64/visualstudio.com
     components:
       - vscode.yaml
     dists:

@@ -45,10 +45,10 @@ providers:
       - focal
       - jammy
 
-  - name: microsoft.com
+  - name: visualstudio.com
     custom: true
     architecture: amd64
-    url: repositories/x86_64/microsoft.com
+    url: repositories/x86_64/visualstudio.com
     components:
       - vscode.yaml
     dists:
