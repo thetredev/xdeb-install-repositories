@@ -18,6 +18,18 @@ providers:
       - testing
       - testing-backports
 
+  - name: microsoft.com
+    url: https://packages.microsoft.com/debian/12/prod
+    architecture: arm64
+    components:
+      - main
+    dists:
+      - bookworm
+      - insiders-fast
+      - insiders-slow
+      - nightly
+      - testing
+
   - name: visualstudio.com
     custom: true
     architecture: arm64

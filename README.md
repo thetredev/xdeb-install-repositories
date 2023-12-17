@@ -15,6 +15,8 @@ This project aims to provide package repositories for [xdeb-install](https://git
 | | all | | `i386` | `i686` |
 | `ubuntu.com` | all | http://archive.ubuntu.com/ubuntu | `amd64` | `x86_64` |
 | | all | | `i386` | `i686` |
+| `microsoft.com` | all | https://packages.microsoft.com/debian/12/prod | `amd64` | `x86_64` |
+| | all | | `arm64` | `aarch64` |
 
 Note: The official mirror for `linuxmint.com` (http://packages.linuxmint.com) was replaced with https://mirrors.edge.kernel.org/linuxmint-packages on 2023-12-09 due to the official one being unreachable sporadically. This hinders development, testing, and last but not least the usability of `xdeb-install` as a whole. The mirror will be changed back to the official one once it's fixed, if at all.
 
